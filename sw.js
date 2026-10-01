@@ -1,5 +1,5 @@
-const CACHE='chi-tieu-v7-wallet-balance';
-const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon.svg'];
+const CACHE='chi-tieu-v8-new-app-icon';
+const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon-192.png','./assets/app-icon-512.png'];
 
 self.addEventListener('install',event=>{
   event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)).then(()=>self.skipWaiting()));
