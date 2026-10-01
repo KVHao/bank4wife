@@ -1,4 +1,4 @@
-const CACHE='chi-tieu-v3-supabase';
+const CACHE='chi-tieu-v4-auth-form';
 const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon.svg'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))));
