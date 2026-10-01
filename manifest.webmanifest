@@ -1,6 +1,6 @@
 {
-  "name": "Chi tiêu gia đình",
-  "short_name": "Thu chi",
+  "name": "Chi tiêu",
+  "short_name": "Chi tiêu",
   "description": "Ứng dụng quản lý thu chi gia đình",
   "lang": "vi",
   "start_url": "./index.html",
