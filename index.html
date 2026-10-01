@@ -615,6 +615,10 @@
     });
     const ledgerBalance=Object.values(incomeData).reduce((sum,value)=>sum+Number(value||0),0)-Object.values(expenseData).reduce((sum,value)=>sum+Number(value||0),0);
     const mainBalance=ledgerBalance+(Number(walletSettings.balanceOffset)||0);
+    const mainBalanceText=`${mainBalance<0?'-':''}${money(Math.abs(mainBalance))}`;
+    document.querySelector('#walletAccountBalance').textContent=mainBalanceText;
+    document.querySelector('#walletGroupTotal').textContent=mainBalanceText;
+    document.querySelector('#detailAccountBalance').textContent=mainBalanceText;
     const extraAssets=walletExtraAccounts.reduce((sum,account)=>sum+Math.max(0,Number(account.balance)||0),0);
     const extraDebt=walletExtraAccounts.reduce((sum,account)=>sum+Math.abs(Math.min(0,Number(account.balance)||0)),0);
     const assets=Math.max(0,mainBalance)+extraAssets;

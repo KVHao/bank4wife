@@ -1,4 +1,4 @@
-const CACHE='chi-tieu-v6-network-first';
+const CACHE='chi-tieu-v7-wallet-balance';
 const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon.svg'];
 
 self.addEventListener('install',event=>{
