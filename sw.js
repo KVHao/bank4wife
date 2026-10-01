@@ -1,4 +1,4 @@
-const CACHE='chi-tieu-v10-user-icons';
+const CACHE='chi-tieu-v11-remove-search-mark';
 const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon-192.png','./assets/app-icon-512.png'];
 
 self.addEventListener('install',event=>{

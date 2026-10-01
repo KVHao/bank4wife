@@ -18,7 +18,7 @@
     .hero{height:286px;padding:22px 24px 0;color:#fff;background:radial-gradient(circle at 54% 35%,#f26098 0 31%,transparent 32%),linear-gradient(145deg,#ed5d92,#f0528d);position:relative;overflow:hidden}
     .hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #ff82ad55;border-radius:50%;left:25px;top:78px}
     .topbar,.switch,.shortcuts{position:relative;z-index:2;display:flex;align-items:center}
-    .topbar{justify-content:space-between;height:50px}
+    .topbar{justify-content:flex-end;height:50px}
     .search{width:28px;height:28px;border:4px solid white;border-radius:50%;position:relative}
     .search:after{content:"";width:14px;height:4px;background:#fff;position:absolute;right:-11px;bottom:-6px;transform:rotate(48deg);border-radius:3px}
     .switch{gap:10px}
@@ -193,7 +193,7 @@
 <body>
 <main class="app">
   <header class="hero">
-    <div class="topbar"><span class="search" aria-hidden="true"></span><div class="switch" role="tablist" aria-label="Kiểu xem"><button id="detailTab" class="active" aria-selected="true"><span class="sprite i-basket"></span><span>Chi tiết</span></button><button id="calendarTab" aria-selected="false"><span class="sprite i-calendar"></span><span>Lịch</span></button></div></div>
+    <div class="topbar"><div class="switch" role="tablist" aria-label="Kiểu xem"><button id="detailTab" class="active" aria-selected="true"><span class="sprite i-basket"></span><span>Chi tiết</span></button><button id="calendarTab" aria-selected="false"><span class="sprite i-calendar"></span><span>Lịch</span></button></div></div>
     <h1>Chi tiêu gia đình</h1>
     <div class="shortcuts" id="expenseBooks"><button class="shortcut active book-shortcut" data-book="Chi tiêu gia đình"><div class="iconbox"><span class="sprite i-book-main"></span></div><span>Chi tiêu ...</span></button><button class="shortcut add-book" id="addExpenseBook"><div class="iconbox"><span class="sprite i-plus"></span></div><span>Thêm</span></button></div>
   </header>
