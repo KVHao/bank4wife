@@ -1,4 +1,4 @@
-const CACHE='chi-tieu-v14-compact-app-icon';
+const CACHE='chi-tieu-v17-blank-all-transactions';
 const FILES=['./','./index.html','./manifest.webmanifest','./assets/app-icon-192.png','./assets/app-icon-512.png'];
 
 self.addEventListener('install',event=>{
